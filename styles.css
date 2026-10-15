@@ -185,6 +185,15 @@ img {
 .hero-slide--summer {
   background: var(--cream);
 }
+.hero-slide--image {
+  grid-template-columns: 1fr;
+  background: #f4f0e7;
+}
+.hero-slide--image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .hero-copy {
   padding: 92px 0 60px clamp(42px, 6vw, 100px);
   align-self: center;
@@ -207,11 +216,12 @@ img {
   line-height: 0.84;
   letter-spacing: -0.055em;
 }
-.hero-copy h1 em,
 .autumn-copy h2 em,
 .journal h2 em {
-  color: var(--red);
   font-weight: 600;
+}
+.hero-copy h1 em {
+  color: #896341;
 }
 .hero-description {
   max-width: 390px;
@@ -252,25 +262,6 @@ img {
   min-height: 690px;
   overflow: hidden;
 }
-.sun-shape {
-  position: absolute;
-  width: 74%;
-  aspect-ratio: 1;
-  top: 8%;
-  right: -8%;
-  border-radius: 45% 55% 54% 46%/48% 35% 65% 52%;
-  background: var(--gold);
-  transform: rotate(-11deg);
-}
-.sun-shape::after {
-  content: "";
-  position: absolute;
-  width: 48%;
-  aspect-ratio: 1;
-  inset: 19%;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
-}
 .summer-art img {
   position: absolute;
   z-index: 2;
@@ -283,17 +274,6 @@ img {
   filter: drop-shadow(0 28px 30px rgba(65, 39, 8, 0.24));
   transform: translateY(-50%);
   mix-blend-mode: multiply;
-}
-.sneaker-shadow {
-  position: absolute;
-  z-index: 1;
-  width: 55%;
-  height: 7%;
-  left: 22%;
-  bottom: 15%;
-  border-radius: 50%;
-  background: rgba(75, 42, 11, 0.18);
-  filter: blur(18px);
 }
 .hero-slide--autumn {
   grid-template-columns: 35% 65%;
@@ -796,7 +776,7 @@ img {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: var(--red);
+  background: #896341;
   color: #fff;
 }
 .journal .eyebrow {
@@ -810,7 +790,7 @@ img {
   letter-spacing: -0.06em;
 }
 .journal h2 em {
-  color: var(--gold);
+  color: #dbb383;
 }
 .journal a {
   display: inline-flex;
@@ -852,7 +832,7 @@ img {
   letter-spacing: -0.05em;
 }
 .story-hero h1 em {
-  color: var(--red);
+  color: #dbb383;
 }
 .story-hero-copy > p:not(.eyebrow) {
   max-width: 420px;
@@ -921,7 +901,7 @@ img {
   border-top: 1px solid var(--line);
 }
 .story-milestone > span {
-  color: var(--red);
+  color: #dbb383;
   font-family: var(--serif);
   font-size: 28px;
 }
@@ -1511,6 +1491,9 @@ footer small {
   .hero-slide--summer {
     background: var(--cream);
   }
+  .hero-slide--image {
+    grid-template-rows: 1fr;
+  }
   .hero-copy {
     padding: 55px 24px 0;
     align-self: start;
@@ -1531,11 +1514,6 @@ footer small {
     right: 4%;
     top: 50%;
     transform: translateY(-50%);
-  }
-  .sun-shape {
-    width: 84%;
-    right: -12%;
-    top: -10%;
   }
   .hero-slide--autumn {
     grid-template-columns: 1fr;
