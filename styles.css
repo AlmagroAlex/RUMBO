@@ -422,11 +422,6 @@ img {
   color: #fff;
   transform: none;
 }
-.category-controls {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
 .category-carousel {
   display: grid;
   grid-auto-columns: calc((100% - 45px) / 4);
@@ -1482,17 +1477,28 @@ footer small {
     display: none;
   }
   .hero-track {
-    min-height: 850px;
+    min-height: 560px;
+  }
+  .hero-track:has(.hero-slide--image.is-active) {
+    min-height: clamp(260px, 75vw, 360px);
   }
   .hero-slide {
     grid-template-columns: 1fr;
     grid-template-rows: 48% 52%;
   }
   .hero-slide--summer {
+    grid-template-rows: 1fr;
     background: var(--cream);
+  }
+  .summer-art {
+    display: none;
   }
   .hero-slide--image {
     grid-template-rows: 1fr;
+  }
+  .hero-slide--image img {
+    height: calc(100% - 52px);
+    align-self: start;
   }
   .hero-copy {
     padding: 55px 24px 0;
@@ -1571,13 +1577,6 @@ footer small {
   .category-carousel {
     gap: 12px;
     grid-auto-columns: calc((100% - 36px) / 4);
-  }
-  .category-controls {
-    gap: 6px;
-  }
-  .category-controls .round-arrow {
-    width: 40px;
-    height: 40px;
   }
   .category-card {
     height: 190px;
@@ -1687,7 +1686,7 @@ footer small {
 }
 @media (max-width: 430px) {
   .hero-track {
-    min-height: 790px;
+    min-height: 480px;
   }
   .hero-copy h1 {
     font-size: 57px;

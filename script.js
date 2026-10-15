@@ -545,14 +545,6 @@ if (categoryCarousel) {
     }
   };
 
-  document.querySelector(".category-prev")?.addEventListener("click", () => {
-    moveCategoryCarousel(-1);
-    startCategoryTimer();
-  });
-  document.querySelector(".category-next")?.addEventListener("click", () => {
-    moveCategoryCarousel();
-    startCategoryTimer();
-  });
   startCategoryTimer();
 
   setInterval(moveCategoryCarousel, 3000);
