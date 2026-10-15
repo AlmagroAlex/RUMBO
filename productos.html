@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+  <meta content="Explorá el catálogo de Rumbo y encontrá zapatillas por estilo, talle y precio." name="description"/>
+  <title>Productos — Rumbo</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet"/>
+  <link href="styles.css" rel="stylesheet"/>
+ </head>
+ <body class="catalog-page">
+  <div class="announcement">
+   Envío gratis en compras superiores a US$150
+   <span>→</span>
+  </div>
+  <header class="site-header">
+   <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
+   <a class="logo" href="index.html" aria-label="Rumbo — inicio">Rumbo</a>
+   <nav class="desktop-nav" aria-label="Navegación principal">
+    <a href="index.html">Inicio</a>
+    <a href="productos.html" aria-current="page">Productos</a>
+    <a href="historia.html">Nuestra historia</a>
+   </nav>
+   <div class="header-actions">
+    <button class="icon-button search-button" type="button" aria-label="Buscar">
+     <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg>
+    </button>
+    <button class="icon-button cart-button" type="button" aria-label="Abrir carrito" aria-controls="cart-drawer">
+     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8Z"></path><path d="M9 8V6a3 3 0 0 1 6 0v2"></path></svg>
+     <span class="cart-count" aria-live="polite">0</span>
+    </button>
+   </div>
+  </header>
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Menú móvil">
+   <a href="index.html">Inicio</a>
+   <a href="productos.html" aria-current="page">Productos</a>
+   <a href="historia.html">Nuestra historia</a>
+  </nav>
+  <main>
+   <section class="catalog section" aria-labelledby="catalog-title">
+    <div class="section-heading catalog-heading">
+     <div>
+      <p class="eyebrow">Encontrá tu próximo par</p>
+      <h1 id="catalog-title">Todos los modelos</h1>
+     </div>
+     <p id="catalog-result-count" aria-live="polite">15 productos</p>
+    </div>
+    <div class="catalog-layout">
+     <form class="catalog-filters" aria-label="Filtrar productos">
+      <div class="catalog-filter-heading">
+       <h2>Filtrar por</h2>
+       <button class="filter-reset" type="button">Limpiar</button>
+      </div>
+      <label for="filter-search">Buscar modelo</label>
+      <input id="filter-search" name="search" type="search" placeholder="Ej.: Runner"/>
+      <label for="filter-collection">Colección</label>
+      <select id="filter-collection" name="collection">
+       <option value="all">Todas las colecciones</option>
+       <option value="nuevos">Nuevos</option>
+      </select>
+      <label for="filter-style">Estilo</label>
+      <select id="filter-style" name="style">
+       <option value="all">Todos los estilos</option>
+       <option value="urbanas">Urbanas</option>
+       <option value="deportivas">Deportivas</option>
+       <option value="casuales">Casuales</option>
+      </select>
+      <label for="filter-category">Categoría</label>
+      <select id="filter-category" name="category">
+       <option value="all">Todas las categorías</option>
+       <option value="urbanas">Urbanas</option>
+       <option value="deportivas">Deportivas</option>
+       <option value="ninos">Niños</option>
+       <option value="botas">Botas</option>
+      </select>
+      <label for="filter-size">Talle</label>
+      <select id="filter-size" name="size">
+       <option value="all">Todos los talles</option>
+       <option value="35">35</option>
+       <option value="36">36</option>
+       <option value="37">37</option>
+       <option value="38">38</option>
+       <option value="39">39</option>
+       <option value="40">40</option>
+       <option value="41">41</option>
+       <option value="42">42</option>
+       <option value="43">43</option>
+      </select>
+      <fieldset>
+       <legend>Precio (USD)</legend>
+       <div class="price-filter-fields">
+        <label for="filter-min-price">Mínimo</label>
+        <input id="filter-min-price" name="min-price" type="number" min="0" placeholder="0"/>
+        <label for="filter-max-price">Máximo</label>
+        <input id="filter-max-price" name="max-price" type="number" min="0" placeholder="Sin límite"/>
+       </div>
+      </fieldset>
+     </form>
+     <div class="catalog-results">
+      <div class="product-grid catalog-grid">
+       <article class="product-card" data-id="adidas-profile" data-image="IMG%20ZAPATILLAS/URBANO1.jpeg" data-name="Rumbo Court 01" data-description="Capellada de líneas limpias, cordones clásicos y suela flexible para todos los días." data-price="139" data-style="urbanas" data-category="urbanas" data-sizes="36,37,38,39,40,41,42">
+        <div class="product-image"><img alt="Rumbo Court 01" src="IMG%20ZAPATILLAS/URBANO1.jpeg"/><button class="quick-add" type="button">Elegir opciones <span>+</span></button></div>
+        <div class="product-info"><div><h3>Rumbo Court 01</h3><p>Rumbo · Urbana</p></div><strong>$139</strong></div>
+       </article>
+       <article class="product-card" data-id="jordan-profile" data-image="IMG%20ZAPATILLAS/URBANO2.jpeg" data-name="Rumbo District High" data-description="Perfil urbano de caña media con paneles en contraste y ajuste firme con cordones." data-price="185" data-style="urbanas" data-category="urbanas" data-sizes="37,38,39,40,41,42,43">
+        <div class="product-image"><img alt="Rumbo District High" src="IMG%20ZAPATILLAS/URBANO2.jpeg"/><button class="quick-add" type="button">Elegir opciones <span>+</span></button></div>
+        <div class="product-info"><div><h3>Rumbo District High</h3><p>Rumbo · Urbana</p></div><strong>$185</strong></div>
+       </article>
+       <article class="product-card" data-id="nike-profile" data-image="IMG%20ZAPATILLAS/URBANO3.jpeg" data-name="Rumbo Street Sand" data-description="Tono arena y silueta relajada: un básico versátil para looks cotidianos." data-price="172" data-style="urbanas" data-category="urbanas" data-sizes="36,37,38,39,40,41,42">
+        <div class="product-image"><img alt="Rumbo Street Sand" src="IMG%20ZAPATILLAS/URBANO3.jpeg"/><button class="quick-add" type="button">Elegir opciones <span>+</span></button></div>
+        <div class="product-info"><div><h3>Rumbo Street Sand</h3><p>Rumbo · Urbana</p></div><strong>$172</strong></div>
+       </article>
+       <article class="product-card" data-id="jordan-travis" data-image="IMG%20ZAPATILLAS/URBANO4.jpeg" data-name="Rumbo District Redline" data-description="Combinación de tonos oscuros y acentos rojos en una silueta urbana que destaca." data-price="210" data-style="urbanas" data-category="urbanas" data-new="true" data-sizes="38,39,40,41,42,43">
+        <div class="product-image"><img alt="Rumbo District Redline" src="IMG%20ZAPATILLAS/URBANO4.jpeg"/><button class="quick-add" type="button">Elegir opciones <span>+</span></button></div>
+        <div class="product-info"><div><h3>Rumbo District Redline</h3><p>Rumbo · Urbana</p></div><strong>$210</strong></div>
+       </article>
+       <article class="product-card" data-id="new-balance-profile" data-image="IMG%20ZAPATILLAS/DEPORTIVA1.jpeg" data-name="Rumbo Pace Mesh" data-description="Tejido liviano y suela acolchada para caminar con comodidad y moverse con libertad." data-price="159" data-style="deportivas" data-category="deportivas" data-sizes="35,36,37,38,39,40,41">
+        <div class="product-image"><img alt="Rumbo Pace Mesh" src="IMG%20ZAPATILLAS/DEPORTIVA1.jpeg"/><button class="quick-add" type="button">Elegir opciones <span>+</span></button></div>
+        <div class="product-info"><div><h3>Rumbo Pace Mesh</h3><p>Rumbo · Deportiva</p></div><strong>$159</strong></div>
+       </article>
+       <article class="product-card" data-id="adidas-boost-profile" data-image="IMG%20ZAPATILLAS/DEPORTIVA2.jpeg" data-name="Rumbo Sprint Orange" data-description="Diseño deportivo de alto impacto con base liviana y soporte cómodo para el movimiento." data-price="148" data-style="deportivas" data-category="deportivas" data-sizes="37,38,39,40,41,42">
+        <div class="product-image"><img alt="Rumbo Sprint Orange" src="IMG%20ZAPATILLAS/DEPORTIVA2.jpeg"/><button class="quick-add" type="button">Elegir opciones <span>+</span></button></div>
+        <div class="product-info"><div><h3>Rumbo Sprint Orange</h3><p>Rumbo · Deportiva</p></div><strong>$148</strong></div>
+       </article>
+       <article class="product-card" data-id="nike-zoom-profile" data-image="IMG%20ZAPATILLAS/DEPORTIVA3.jpeg" data-name="Rumbo Tempo Red" data-description="Silueta de running llamativa, con ajuste con cordones y una base pensada para moverse." data-price="164" data-style="deportivas" data-category="deportivas" data-sizes="36,37,38,39,40,41">
+        <div class="product-image"><img alt="Rumbo Tempo Red" src="IMG%20ZAPATILLAS/DEPORTIVA3.jpeg"/><button class="quick-add" type="button">Elegir opciones <span>+</span></button></div>
+        <div class="product-info"><div><h3>Rumbo Tempo Red</h3><p>Rumbo · Deportiva</p></div><strong>$164</strong></div>
+       </article>
+       <article class="product-card" data-id="nb-9060" data-image="IMG%20ZAPATILLAS/DEPORTIVA4.jpeg" data-name="Rumbo Pace Cloud" data-description="Volumen contemporáneo y mezcla de texturas para sumar comodidad a tus caminatas." data-price="199" data-style="deportivas" data-category="deportivas" data-sizes="36,37,38,39,40,41,42">
+        <div class="product-image"><img alt="Rumbo Pace Cloud" src="IMG%20ZAPATILLAS/DEPORTIVA4.jpeg"/><button class="quick-add" type="button">Elegir opciones <span>+</span></button></div>
+        <div class="product-info"><div><h3>Rumbo Pace Cloud</h3><p>Rumbo · Deportiva</p></div><strong>$199</strong></div>
+       </article>
+       <article class="product-card" data-id="handball-clear" data-image="IMG%20ZAPATILLAS/NI%C3%91OS1.jpeg" data-name="Rumbo Mini Pastel" data-description="Tonos suaves, ajuste con cordones y una suela flexible para sus aventuras de todos los días." data-price="129" data-style="casuales" data-category="ninos" data-new="true" data-sizes="28,29,30,31,32,33,34,35">
+        <div class="product-image"><img alt="Rumbo Mini Pastel" src="IMG%20ZAPATILLAS/NI%C3%91OS1.jpeg"/><button class="quick-add" type="button">Elegir opciones <span>+</span></button></div>
+        <div class="product-info"><div><h3>Rumbo Mini Pastel</h3><p>Rumbo · Niños</p></div><strong>$129</strong></div>
+       </article>
+       <article class="product-card" data-id="rumbo-mini" data-image="IMG%20ZAPATILLAS/NI%C3%91OS2.jpeg" data-name="Rumbo Mini Color Pop" data-description="Zapatillas junior de colores alegres, con cordones y suela flexible para el uso diario." data-price="69" data-style="casuales" data-category="ninos" data-sizes="28,29,30,31,32,33,34,35">
+        <div class="product-image"><img alt="Rumbo Mini Color Pop" src="IMG%20ZAPATILLAS/NI%C3%91OS2.jpeg"/><button class="quick-add" type="button">Elegir opciones <span>+</span></button></div>
+        <div class="product-info"><div><h3>Rumbo Mini Color Pop</h3><p>Rumbo · Niños</p></div><strong>$69</strong></div>
+       </article>
+       <article class="product-card" data-id="jordan-thunder" data-image="IMG%20ZAPATILLAS/NI%C3%91OS3.jpeg" data-name="Rumbo Mini Active" data-description="Un modelo junior cómodo y resistente para acompañar cada juego y movimiento." data-price="195" data-style="casuales" data-category="ninos" data-new="true" data-sizes="28,29,30,31,32,33,34,35">
+        <div class="product-image"><img alt="Rumbo Mini Active" src="IMG%20ZAPATILLAS/NI%C3%91OS3.jpeg"/><button class="quick-add" type="button">Elegir opciones <span>+</span></button></div>
+        <div class="product-info"><div><h3>Rumbo Mini Active</h3><p>Rumbo · Niños</p></div><strong>$195</strong></div>
+       </article>
+       <article class="product-card" data-id="handball-earth" data-image="IMG%20ZAPATILLAS/NI%C3%91OS4.jpeg" data-name="Rumbo Mini Suede" data-description="Textura suave y perfil clásico en un modelo infantil pensado para todos los días." data-price="103" data-style="casuales" data-category="ninos" data-sizes="28,29,30,31,32,33,34,35">
+        <div class="product-image"><img alt="Rumbo Mini Suede" src="IMG%20ZAPATILLAS/NI%C3%91OS4.jpeg"/><button class="quick-add" type="button">Elegir opciones <span>+</span></button></div>
+        <div class="product-info"><div><h3>Rumbo Mini Suede</h3><p>Rumbo · Niños</p></div><strong>$103</strong></div>
+       </article>
+       <article class="product-card" data-id="rumbo-trail-boot" data-image="IMG%20ZAPATILLAS/BOTAS1.jpeg" data-name="Rumbo Trail Boot" data-description="Bota de caña alta con acabado robusto y cordones, ideal para días frescos y looks urbanos." data-price="189" data-style="urbanas" data-category="botas" data-sizes="36,37,38,39,40,41,42">
+        <div class="product-image"><img alt="Rumbo Trail Boot" src="IMG%20ZAPATILLAS/BOTAS1.jpeg"/><button class="quick-add" type="button">Elegir opciones <span>+</span></button></div>
+        <div class="product-info"><div><h3>Rumbo Trail Boot</h3><p>Rumbo · Botas</p></div><strong>$189</strong></div>
+       </article>
+       <article class="product-card" data-id="rumbo-sun-sandal" data-image="IMG%20ZAPATILLAS/BOTAS2.jpeg" data-name="Rumbo City Boot" data-description="Bota urbana de líneas simples, cómoda y fácil de combinar durante toda la temporada." data-price="59" data-style="urbanas" data-category="botas" data-sizes="36,37,38,39,40,41">
+        <div class="product-image"><img alt="Rumbo City Boot" src="IMG%20ZAPATILLAS/BOTAS2.jpeg"/><button class="quick-add" type="button">Elegir opciones <span>+</span></button></div>
+        <div class="product-info"><div><h3>Rumbo City Boot</h3><p>Rumbo · Botas</p></div><strong>$59</strong></div>
+       </article>
+       <article class="product-card" data-id="jordan-mocha" data-image="IMG%20ZAPATILLAS/BOTAS3.jpeg" data-name="Rumbo Heritage Boot" data-description="Un perfil clásico con acabado cuidado y cordones para sumar carácter a tus conjuntos." data-price="168" data-style="urbanas" data-category="botas" data-sizes="37,38,39,40,41,42">
+        <div class="product-image"><img alt="Rumbo Heritage Boot" src="IMG%20ZAPATILLAS/BOTAS3.jpeg"/><button class="quick-add" type="button">Elegir opciones <span>+</span></button></div>
+        <div class="product-info"><div><h3>Rumbo Heritage Boot</h3><p>Rumbo · Botas</p></div><strong>$168</strong></div>
+       </article>
+       <article class="product-card" data-id="rumbo-trek-boot" data-image="IMG%20ZAPATILLAS/BOTAS4.jpeg" data-name="Rumbo Trek Boot" data-description="Bota versátil de inspiración outdoor, con ajuste firme para acompañarte en cada recorrido." data-price="169" data-style="urbanas" data-category="botas" data-new="true" data-sizes="36,37,38,39,40,41,42">
+        <div class="product-image"><img alt="Rumbo Trek Boot" src="IMG%20ZAPATILLAS/BOTAS4.jpeg"/><button class="quick-add" type="button">Elegir opciones <span>+</span></button></div>
+        <div class="product-info"><div><h3>Rumbo Trek Boot</h3><p>Rumbo · Botas</p></div><strong>$169</strong></div>
+       </article>
+      </div>
+      <p class="catalog-empty" hidden>No encontramos productos con esos filtros. Probá con otra combinación.</p>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer>
+   <a class="logo logo--footer" href="index.html">Rumbo</a>
+   <p>Diseñadas para acompañar cada camino.</p>
+   <div class="footer-links">
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="historia.html">Nuestra historia</a>
+   </div>
+   <small>© 2026 Rumbo. Maqueta demostrativa: productos y precios ilustrativos; no se procesan pagos.</small>
+  </footer>
+  <div aria-hidden="true" class="product-modal-overlay"></div>
+  <aside aria-hidden="true" aria-labelledby="product-modal-title" class="product-modal" id="product-modal">
+   <button aria-label="Cerrar vista del producto" class="product-modal-close" type="button">×</button>
+   <div class="product-modal-media"><img alt="" id="product-modal-image" src=""/></div>
+   <div class="product-modal-content">
+    <p class="eyebrow">Personalizá tu compra</p>
+    <h3 id="product-modal-title">Producto</h3>
+    <p class="product-modal-price" id="product-modal-price">$0</p>
+    <p class="product-modal-description" id="product-modal-description"></p>
+    <div class="option-group"><h4>Color</h4><div class="color-options" id="product-colors"></div></div>
+    <div class="option-group"><h4>Talle</h4><div class="size-options" id="product-sizes"></div></div>
+    <button class="add-to-cart-button" id="product-modal-add" type="button">Agregar al carrito</button>
+   </div>
+  </aside>
+  <div class="floating-cart" id="floating-cart" aria-live="polite">
+   <button aria-label="Abrir carrito" class="floating-cart-button" type="button">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8Z"></path><path d="M9 8V6a3 3 0 0 1 6 0v2"></path></svg>
+    <span class="floating-cart-count">0</span>
+   </button>
+  </div>
+  <div aria-hidden="true" class="drawer-overlay"></div>
+  <aside aria-hidden="true" aria-label="Carrito de compras" class="cart-drawer" id="cart-drawer">
+   <div class="cart-header">
+    <div><p class="eyebrow">Tu selección</p><h2>Bolsa de compras <span class="cart-title-count">(0)</span></h2></div>
+    <button aria-label="Cerrar carrito" class="close-cart" type="button">×</button>
+   </div>
+   <div class="cart-items"></div>
+   <div class="cart-empty is-visible">
+    <div class="empty-icon">↗</div>
+    <h3>Tu bolsa está vacía</h3>
+    <p>Agregá un par para empezar tu próxima aventura.</p>
+   </div>
+   <div class="cart-footer" style="display:none">
+    <div class="cart-total"><span>Subtotal</span><strong>$0</strong></div>
+    <button class="checkout-button" type="button">Finalizar compra · demo <span>→</span></button>
+    <p>Demostración interactiva: no se procesa ningún pago ni se genera un pedido real.</p>
+   </div>
+  </aside>
+  <div aria-live="polite" class="toast" role="status"></div>
+  <script src="navigation.js"></script>
+  <script src="script.js"></script>
+ </body>
+</html>
